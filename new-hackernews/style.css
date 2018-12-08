@@ -1,0 +1,154 @@
+body {
+    background-color: #f2f2f2;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #303030;
+  }
+  
+  .container {
+    margin-right: auto; /* 1 */
+    margin-left:  auto; /* 1 */
+  
+    max-width: 1090px; /* 2 */
+  
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+    /* border: 1px saddlebrown solid; */
+    overflow: auto;
+  }
+
+  .row {
+      width: 100%;
+      float: left;
+  }
+
+  #news {
+      /* border: 1px solid red; */
+      overflow: auto;
+      /* margin: 0 0.5em !important; */
+
+  }
+  .col {
+      float: left;
+  }
+  .card-deck {
+      float: left;
+      width: 33.2%;
+      min-width:300px;
+      margin-top: 1em 
+
+  }
+  .card-img {
+      width: 100%
+  }
+  .card{
+    /* padding: 1em; */
+    margin: 0.5em 0 0.5em 1em ;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 900ms ease-in;
+    min-height:370px;
+    max-height:370px
+
+  }
+  small {
+      font-size: 10px
+  }
+  .card-title {
+    padding: 0.5em 1.2em;
+    font-weight: bold;
+}
+.card-body {
+    padding: 1em 1.2em;
+
+  }
+  #mar{
+      margin: 0 ;
+      margin-top:-0.5em !important;
+      margin-left:-0.5em !important;
+      padding-top: 0.6em;
+      height: 40px;
+      background: #303030;
+      color: white;
+      /* height:100%; */
+  }
+
+
+  @media screen and (min-width: 1024px) {
+    .card-deck:hover {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
+  
+
+  @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+#container {
+  color:#999;
+  text-transform: uppercase;
+  font-size:36px;
+  font-weight:bold;
+  padding-top:200px;  
+  position:fixed;
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+}
